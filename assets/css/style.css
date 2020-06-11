@@ -1059,7 +1059,8 @@ a:focus {
     letter-spacing: 0;
     color: #696969; }
   .menu li:hover > a, .menu li.show > a, .menu li.active > a {
-    background-color: #f4f4f4; }
+    background-color: #f4f4f4;
+    color: #ea6253; }
   .menu li:hover > ul,
   .menu li:hover > .megamenu, .menu li.show > ul,
   .menu li.show > .megamenu, .menu li.active > ul,
@@ -1429,22 +1430,6 @@ a:focus {
   justify-content: space-between;
   padding: 4.5rem 0 2.5rem;
   border-top: 1px solid #e1e1e1; }
-
-  .footer-middle .newsletter-widget .widget .form-control-normal{
-    font: 400 12px "Open Sans", sans-serif;
-        color: #686865;
-        letter-spacing: 0.005em;
-        border-radius: none;
-        height: 43px;
-        padding-left: 2rem;
-        background-color: #f4f4f4;
-        border: none;
-        width: 300px;
-        min-width: 300px;
-        margin: 0 10px;
-        margin-bottom: 10px; 
-        
-  }
   .footer-middle form {
     margin-bottom: 2rem;
     border-radius: 30px; }
@@ -1461,11 +1446,8 @@ a:focus {
         padding-left: 2rem;
         background-color: #f4f4f4;
         border: none;
-        min-width: 300px;
-        margin-bottom: 0;
-        margin-left: 10px; }
-
-       
+        min-width: 240px;
+        margin-bottom: 0; }
       .footer-middle form .submit-wrapper button {
         background-color: #ea6253;
         border-radius: 0 30px 30px 0;
@@ -1474,7 +1456,7 @@ a:focus {
         color: white;
         margin-bottom: 0;
         height: 43px;
-        min-width: 115px; }
+        min-width: 105px; }
         .footer-middle form .submit-wrapper button:hover {
           opacity: 0.8; }
 
