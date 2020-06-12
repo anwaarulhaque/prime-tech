@@ -6462,6 +6462,43 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   .cross-txt::after {
     margin-left: 2.5rem; }
 
+.categories-container {
+  padding-top: 3.2rem;
+  padding-bottom: 3.2rem;
+  background-color: #f4f4f4;
+  margin-bottom: 0; }
+  .categories-container .owl-prev, .categories-container .owl-next {
+    margin-left: -2rem !important;
+    margin-right: -2rem !important;
+    color: #333 !important; }
+
+.category {
+  display: block !important;
+  padding: 3rem 2rem !important;
+  background-color: white !important;
+  color: #383838;
+  cursor: pointer !important;
+  transition: all 0.2s ease-out !important;
+  text-align: center !important;
+  z-index: 10 !important;
+  height: 220px !important; }
+  .category .swap img:last-child {
+    display: none; }
+  .category .swap:hover img:first-child {
+    display: none; }
+  .category .swap:hover img:last-child {
+    display: inline-block; }
+  .category img {
+    height: 100px; }
+  .category span {
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: -0.005em;
+    margin-top: 15px; }
+  .category:hover {
+    color: #ea6253;
+    box-shadow: 0 20px 43px rgba(0, 0, 0, 0.15); }
+
 .home .testimonials-slider {
   border: 2px solid #ea6253;
   margin-bottom: 2rem; }
