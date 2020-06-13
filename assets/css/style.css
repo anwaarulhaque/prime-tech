@@ -8962,7 +8962,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   font-size: 2.3rem;
   line-height: 1.35;
   margin-bottom: 1rem;
-  color: #282d3b; }
+  color: #ea6253; }
   .entry-title a {
     color: #282d3b; }
     .entry-title a:hover, .entry-title a:focus {
@@ -8970,7 +8970,8 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
       text-decoration: underline; }
 
 .entry-content p {
-  font-size: 1.7rem; }
+  font-size: 1.5rem;
+  text-align: justify; }
 
 .read-more {
   float: right; }
