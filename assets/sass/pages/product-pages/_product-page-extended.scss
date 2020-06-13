@@ -8,8 +8,10 @@
   }
 
   .product-title {
-    font-size: 4.5rem;
+    font-size: 3rem !important;
     line-height: 1.15;
+    color: #ea6253;
+    
   }
 
   .price-box {
@@ -31,9 +33,11 @@
   .product-desc {
     margin-bottom: 3.1rem;
     padding-bottom: 1.9rem;
+    
 
     p {
       max-width: none;
+      
     }
   }
 

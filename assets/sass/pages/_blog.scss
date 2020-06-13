@@ -37,47 +37,17 @@
 
 .entry-body {
     border-bottom: 1px solid #ddd;
-    padding-bottom: 2.7rem;
-
+    margin-left: 0 !important;
     .entry:not(.single):last-of-type & {
       border-bottom: 0;
     }
 
-  .entry-date {
-    width: 45px;
-    margin-right: 10px;
-    float: left;
-    text-align: center;
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .1);
-
-      .day {
-        color: $secondary-color;
-      background-color: #f4f4f4;
-      border-radius: .2rem .2rem 0 0;
-      display: block;
-      font-size: 1.6rem;
-      font-weight: 600;
-      padding: 1rem .2rem;
-      line-height: 1.375;
-      margin-bottom: .3rem;
-      }
-
-      .month {
-        color: #fff;
-      background-color:$secondary-color;
-      border-radius: 0 0 .2rem .2rem;
-      box-shadow: 0 -1px 0 0 rgba(0,0,0,.07) inset;
-      display: block;
-      font-size: 1.2rem;
-      padding: 0 .2rem .2rem;
-      line-height: 1.33;
-      }
-  }
+  
 }
 
 .entry-title {
   font-weight: 400;
-  font-size: 2.1rem;
+  font-size: 2.3rem;
     line-height: 1.35;
     margin-bottom: 1rem;
   color: $headings-text;
@@ -94,7 +64,9 @@
 }
 
 .entry-content {
-  @include clearfix;
+  p{
+    font-size: 1.7rem;
+  }
 }
 
 .read-more {
@@ -139,7 +111,7 @@
   }
 
   .entry-content {
-    margin-bottom: 4rem;
+    margin-bottom: 1px;
   }
 }
 

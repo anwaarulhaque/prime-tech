@@ -7162,37 +7162,33 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
     letter-spacing: -.01em; }
   .product-single-details .price-box {
     margin-bottom: 2.4rem;
-    color: #ea6253;
     font-weight: 700; }
+  .product-single-details .table tbody td {
+    text-transform: none !important;
+    padding: 15px 10px !important; }
+    .product-single-details .table tbody td:last-child {
+      color: #ea6253; }
   .product-single-details .product-price {
-    font-size: 2.4rem;
+    font-size: 1.5rem;
     font-weight: 700;
-    color: #ea6253; }
+    color: #ea6253 !important; }
   .product-single-details .old-price {
     font-size: 1.8rem;
     font-weight: 600; }
     .product-single-details .old-price + .product-price {
       margin-left: 1rem; }
-  .product-single-details .ratings-container {
-    margin-bottom: 2.1rem; }
-    .product-single-details .ratings-container .product-ratings,
-    .product-single-details .ratings-container .ratings {
-      font-size: 1.4rem; }
-    .product-single-details .ratings-container .product-ratings {
-      height: 14px; }
-  .product-single-details .rating-link {
-    margin-left: 1rem;
-    color: #90939a;
-    font-weight: 500;
-    font-size: 1.4rem;
-    letter-spacing: .025em; }
   .product-single-details .product-desc {
     margin-bottom: 2.7rem;
+    text-align: justify;
     padding-bottom: 1rem;
     border-bottom: 1px solid #dae2e6;
     font-size: 1.4rem;
     letter-spacing: .005em;
     line-height: 1.92; }
+    .product-single-details .product-desc h3 {
+      margin: 10px 0;
+      font: 500 2rem "Poppins", "Open Sans", sans-serif;
+      color: #21293c; }
   .product-single-details .license-box {
     padding-bottom: 2rem;
     border-bottom: 1px solid #dae2e6;
@@ -7262,8 +7258,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
       margin-right: 2rem;
       margin-bottom: 0;
       color: #777;
-      font-size: 16px;
-      font-weight: 600; }
+      font-size: 16px; }
     .product-single-details .sticky-header .price-box {
       margin-top: 1rem;
       margin-bottom: 0;
@@ -7828,8 +7823,9 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
     position: relative;
     margin-bottom: 3rem; }
   .product-single-extended .product-title {
-    font-size: 4.5rem;
-    line-height: 1.15; }
+    font-size: 3rem !important;
+    line-height: 1.15;
+    color: #ea6253; }
   .product-single-extended .price-box {
     margin-bottom: 1rem; }
   .product-single-extended .product-price {
@@ -8298,7 +8294,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
     bottom: 1rem; }
   .product-single-grid .product-single-details .product-title {
     margin-top: 1.5rem;
-    font-size: 2.8rem; }
+    font-size: 2.5rem; }
   .product-single-grid .product-single-details .ratings-container {
     margin-bottom: 5rem; }
   .product-single-grid .product-single-details .price-box {
@@ -8957,38 +8953,13 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 
 .entry-body {
   border-bottom: 1px solid #ddd;
-  padding-bottom: 2.7rem; }
+  margin-left: 0 !important; }
   .entry:not(.single):last-of-type .entry-body {
     border-bottom: 0; }
-  .entry-body .entry-date {
-    width: 45px;
-    margin-right: 10px;
-    float: left;
-    text-align: center;
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1); }
-    .entry-body .entry-date .day {
-      color: #282d3b;
-      background-color: #f4f4f4;
-      border-radius: .2rem .2rem 0 0;
-      display: block;
-      font-size: 1.6rem;
-      font-weight: 600;
-      padding: 1rem .2rem;
-      line-height: 1.375;
-      margin-bottom: .3rem; }
-    .entry-body .entry-date .month {
-      color: #fff;
-      background-color: #282d3b;
-      border-radius: 0 0 .2rem .2rem;
-      box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.07) inset;
-      display: block;
-      font-size: 1.2rem;
-      padding: 0 .2rem .2rem;
-      line-height: 1.33; }
 
 .entry-title {
   font-weight: 400;
-  font-size: 2.1rem;
+  font-size: 2.3rem;
   line-height: 1.35;
   margin-bottom: 1rem;
   color: #282d3b; }
@@ -8998,10 +8969,8 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
       color: #282d3b;
       text-decoration: underline; }
 
-.entry-content::after {
-  display: block;
-  clear: both;
-  content: ''; }
+.entry-content p {
+  font-size: 1.7rem; }
 
 .read-more {
   float: right; }
@@ -9030,7 +8999,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
     margin-right: .2rem; }
 
 .single .entry-content {
-  margin-bottom: 4rem; }
+  margin-bottom: 1px; }
 
 .entry-share {
   display: -ms-flexbox;

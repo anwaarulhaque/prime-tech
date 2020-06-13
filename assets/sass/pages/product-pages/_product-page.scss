@@ -99,14 +99,27 @@
 
   .price-box {
     margin-bottom: 2.4rem;
-    color: $primary-color;
     font-weight: 700;
   }
 
+  .table{
+    
+    tbody{
+      td{
+        text-transform: none !important;
+        padding: 15px 10px!important;
+        
+        &:last-child{
+          color: #ea6253 ;
+        }
+      }
+    }
+  }
+
   .product-price {
-    font-size: 2.4rem;
+    font-size: 1.5rem;
     font-weight: 700;
-    color: $primary-color;
+    color: #ea6253 !important;
   }
 
   .old-price {
@@ -118,29 +131,18 @@
     }
   }
 
-  .ratings-container {
-    margin-bottom: 2.1rem;
-
-    .product-ratings, 
-    .ratings {
-      font-size: 1.4rem;
-    }
-
-    .product-ratings {
-      height: 14px;
-    }
-  }
-
-  .rating-link {
-    margin-left: 1rem;
-    color: #90939a;
-    font-weight: 500;
-    font-size: 1.4rem;
-    letter-spacing: .025em;
-  }
-
+  
+  
   .product-desc {
+    h3{
+      margin: 10px 0;
+      font: 500 2rem $font-family;
+    color: #21293c;
+
+    }
+
     margin-bottom: 2.7rem;
+    text-align: justify;
     padding-bottom: 1rem;
     border-bottom: 1px solid #dae2e6;
     font-size: 1.4rem;
@@ -253,7 +255,7 @@
       margin-bottom: 0;
       color: #777;
       font-size: 16px;
-      font-weight: 600;
+      // font-weight: 600;
     }
     
     .price-box {
