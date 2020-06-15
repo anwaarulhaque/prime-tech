@@ -3,6 +3,8 @@
   font-family: $second-font-family;
   padding: 15px 0;
   color: #696969;
+  background-color: #fff !important;
+
 
   .container,
   .container-fluid {
@@ -18,6 +20,7 @@
     right: 0;
     left: 0;
     z-index: 1040;
+    background-color: #fff;
   }
 
   .btn-remove {
@@ -59,9 +62,11 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  background-color: #fff;
+  padding: 20px 0;
 
   .header-transparent &:not(.fixed) {
-    background-color: transparent;
+    background-color: #fff;
     background-image: none;
   }
 
@@ -85,7 +90,7 @@
   display: none;
 
   img {
-    display: block;
+    display: none;
     max-width: 100%;
     height: auto;
   }

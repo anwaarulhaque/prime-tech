@@ -318,7 +318,8 @@ a:focus {
 .header {
   font-family: "Open Sans", sans-serif;
   padding: 15px 0;
-  color: #696969; }
+  color: #696969;
+  background-color: #fff !important; }
   .header .container,
   .header .container-fluid {
     display: -ms-flexbox;
@@ -330,7 +331,8 @@ a:focus {
     top: 0;
     right: 0;
     left: 0;
-    z-index: 1040; }
+    z-index: 1040;
+    background-color: #fff; }
   .header .btn-remove::before {
     display: none; }
 
@@ -356,9 +358,11 @@ a:focus {
   background-image: url("../images/header-bg.jpg");
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: cover; }
+  background-size: cover;
+  background-color: #fff;
+  padding: 20px 0; }
   .header-transparent .header-middle:not(.fixed) {
-    background-color: transparent;
+    background-color: #fff;
     background-image: none; }
   .header-middle .container,
   .header-middle .container-fluid {
@@ -374,7 +378,7 @@ a:focus {
 .logo {
   display: none; }
   .logo img {
-    display: block;
+    display: none;
     max-width: 100%;
     height: auto; }
 
