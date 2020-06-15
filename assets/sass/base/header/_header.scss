@@ -1,7 +1,8 @@
 // Header
 .header {
   font-family: $second-font-family;
-  background-color: #fff ;
+  padding: 15px 0;
+  color: #696969;
 
   .container,
   .container-fluid {
@@ -9,8 +10,6 @@
     display: flex;
     -ms-flex-align: center;
     align-items: center;
-  background-color: #fff ;
-
   }
 
   &.header-transparent {
@@ -50,14 +49,12 @@
 
   .header-row {
     justify-content: flex-end;
-    padding: 10px 0;
   }
 }
 
 .header-middle {
-  border-bottom: 1px solid rgba(138, 137, 132, .5);
-  background-color: #fff ;
-
+  // border-bottom: 1px solid rgba(138, 137, 132, .5);
+  // background-color: #94968d;
   background-image: url('../images/header-bg.jpg');
   background-repeat: no-repeat;
   background-position: center center;
@@ -77,17 +74,15 @@
 .header-row {
   align-items: center;
   width: 100%;
-  
 }
 
 .header-row-top {
   // border-bottom: 1px solid rgba(138, 137, 132, .5);
   display: none;
-  
 }
 
 .logo {
-  display: block;
+  display: none;
 
   img {
     display: block;
@@ -124,7 +119,7 @@
     padding-top: 1.6rem;
     padding-right: 2.2rem;
     padding-bottom: 1.6rem;
-    color: #a36200;
+    color: #c0bebb;
 
     &::after {
       position: absolute;
@@ -141,7 +136,7 @@
   }
 
   &:hover > a {
-    color: rgb(80, 80, 80);
+    color: #fff;
   }
 
   a {
@@ -206,7 +201,7 @@
       display: flex;
       align-items: center;
       padding: 6px 20px;
-      color: #b10000;
+      color: #696969;
       font-size: 1.5rem;
       font-weight: 400;
       white-space: nowrap;
@@ -218,7 +213,7 @@
 
     &:hover,
     &:focus {
-      background-color: $primary-color;
+      background-color: transparent;
       color: #696969;
       text-decoration: none;
     }
@@ -230,7 +225,7 @@
   align-items: center;
 
   .header-dropdown {
-    // border-left: 1px solid rgba(138, 137, 132, .5);
+    border-left: 1px solid rgba(138, 137, 132, .5);
   }
 }
 
@@ -532,7 +527,7 @@
     display: inline-block;
     min-width: 2.5rem;
     padding: 1rem 1.25rem;
-    color: rgb(0, 0, 0);
+    color: #fff;
     font-size: 1.8rem;
     font-weight: 400;
     line-height: 1;
@@ -588,10 +583,14 @@
   padding: 1.35rem .5rem;
   border: 0;
   background: transparent;
-  color: rgb(0, 0, 0);
+  color: rgb(29, 29, 29);
   font-size: 2.1rem;
   line-height: 1;
   cursor: pointer;
+
+  &:hover{
+    color: #ff4052;
+  }
 
   i {
     &::before {
@@ -647,23 +646,14 @@
       }
 
       a {
-        color: #ea6253;
-        background-color: transparent;
-        padding: 5px 10px !important;
-        border-radius: 4px;
-        border: 1px solid #ea6253;
+        color: #c0bebb;
         font-size: 1.3rem;
 
         &:hover,
         &:focus {
-          background-color: #ea6253;
+          background-color: transparent;
           color: #fff;
         }
-      }
-
-      .store{
-        background-color: #ea6253;
-          color: #fff;
       }
     }
   }

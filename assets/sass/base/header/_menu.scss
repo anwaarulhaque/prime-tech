@@ -37,19 +37,21 @@
     .menu-title {
       margin-top: 1.25rem;
       margin-bottom: 0;
-      color: #434d53;
+      color: #b3b3b3;
       letter-spacing: -.01rem;
-      text-transform: uppercase;
+      font-size: 18px !important;
+     
 
       a {
         padding: .7rem 2rem;
-        color: #434d53;
-        font-size: 1.3rem;
-        font-weight: 700;
+        color: #707070;
+        font-size: 1.5rem;
+       
 
         &:hover,
         &:focus {
           text-decoration: underline;
+          
         }
       }
     }
@@ -68,7 +70,7 @@
       margin-bottom: -1px;
       padding: 1.4rem 0;
       background-color: transparent;
-      color: rgb(102, 102, 102);
+      color: rgb(82, 82, 82);
       font-size: 1.4rem;
       font-weight: 400;
       letter-spacing: .075rem;
@@ -97,8 +99,6 @@
     }
   }
 
-  
-
   ul {
     display: none;
     position: absolute;
@@ -109,6 +109,7 @@
     padding-top: 1rem;
     padding-bottom: 1rem;
     z-index: 99;
+    box-shadow: 2px 2px 5px rgb(185, 185, 185);
 
     ul {
       top: -1rem;
@@ -120,7 +121,7 @@
   .megamenu {
     display: none;
     position: absolute;
-    top: 100%;
+    top: 3.5rem;
     right: 1.5rem;
     left: 1.5rem;
     padding: 1rem;
@@ -235,8 +236,9 @@
   li.show,
   li.active {
     > a {
-      background-color: $primary-color;
-      color: #ffffff;
+      background-color: transparent;
+      color: #ea6253;
+      cursor: pointer;
     }
   }
 
@@ -305,6 +307,8 @@
   &.tip-hot::before {border-right-color: #eb2771;}
 }
 
+
+
 @include mq('lg') {
   .main-nav {
     display: block;
@@ -317,6 +321,47 @@
       margin-left: 4rem;
     }
   }
+}
+
+
+.inner-menu{
+  .cards{
+    display: flex;
+    width: 100%;
+   
+    .part-1, .part-2{
+      width: 300px;
+      ul{
+        li{
+          width: 100%;
+          
+          a{
+            display: flex;
+            flex-direction: row;
+            
+            
+            img{ 
+            vertical-align: middle;
+            height: 30px;
+            width: auto;
+            background-color: transparent;
+          }
+          }
+          span{
+            position: relative;
+            top: 5px;
+            left: 10px;
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+  
+
+  .swap img:last-child{display:none;}
+  .swap:hover img:first-child{display:none;}
+  .swap:hover img:last-child{display:inline-block}
 }
 
 @media screen and (max-width: 1279px) and (min-width: 992px) {
