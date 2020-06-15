@@ -350,7 +350,8 @@ a:focus {
   flex: 1 1 auto;
   flex-direction: column; }
   .header-right .header-row {
-    justify-content: flex-end; }
+    justify-content: flex-end;
+    padding: 10px 0; }
 
 .header-middle {
   border-bottom: 1px solid rgba(138, 137, 132, 0.5);
@@ -369,6 +370,9 @@ a:focus {
 .header-row {
   align-items: center;
   width: 100%; }
+
+.header-row-top {
+  display: none; }
 
 .logo {
   display: block; }
