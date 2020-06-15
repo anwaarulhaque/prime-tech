@@ -36,153 +36,116 @@
 <body>
     <div class="page-wrapper">
         <header class="header">
-           
-            <div class="header-bottom sticky-header">
+            <div class="header-middle sticky-header">
                 <div class="container">
-                    <div class="row row-sm">
-                        <div class="col-lg-2 header-left">
+                    <div class="header-left">
+                        <a href="index.html" class="logo">
+                            <!-- <img src="assets/images/logo.png" alt="Porto Logo"> -->
+                        </a>
+                    </div><!-- End .header-left -->
+
+                    <div class="header-right">
+                        <div class="row header-row header-row-top">
+                            <div class="header-dropdown dropdown-expanded">
+                                
+                                <div class="header-menu">
+                                    <ul>
+                                        <li><a href="#" class="store">Store </a></li>
+                                        <li><a href="#">Login </a></li>
+                                     
+                                    </ul>
+                                </div><!-- End .header-menu -->
+                            </div><!-- End .header-dropown -->
+                            <div class="header-search">
+                                <a href="#" class="search-toggle" role="button"><i class="icon-magnifier"></i></a>
+                                <div class="header-search-wrapper">
+                                    <form action="#" method="get">
+                                        <input type="search" class="form-control" name="q" id="q" placeholder="Search..." required>
+                                        <button class="btn" type="submit"><i class="icon-magnifier"></i></button>
+                                    </form>
+                                </div><!-- End .header-search-wrapper -->
+                            </div><!-- End .header-search -->
+                        </div><!-- End .header-row -->
+
+                        <div class="row header-row header-row-bottom">
+                            <nav class="main-nav">
+                                <ul class="menu sf-arrows">
+                                   
+                                    <li>
+                                        <a href="instruments.html" class="sf-with-ul">Instruments</a>
+                                        <ul>
+                                            <li><a href="lock-in amplifier.html">Lock-in Amplifier</a></li>
+                                            <li><a href="arbitary waveform generator.html">Arbitary waveform-generator</a></li>
+                                            <li><a href="pid controller.html">PID Controller</a></li>
+                                            <li><a href="frequency response analyzer.html">Frequency Response Analyzer</a></li>
+                                            <li><a href="laser lock box.html">Laser Lock Box</a></li>
+                                            <li><a href="phasemeter.html">Phasemeter</a></li>
+                                            <li><a href="oscilloscope.html">Oscilloscope</a></li>
+                                            <li><a href="spectrum-analyzer.html">Spectrum analyzer</a></li>
+                                            <li><a href="digital-filter-box.html">Digitital filter Box</a></li>
+                                            <li><a href="waveform-generator.html">waveform Generator</a></li>
+                                            <li><a href="data-logger.html">Data Logger</a></li>
+                                            <li><a href="fir-filter-builder.html">FIR Filter Builder</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li>
+                                        <a href="#" class="sf-with-ul">Hardware</a>
+                                        <ul>
+                                            <li><a href="mokulab.html">Moku:Lab <br>A software-configurable hardware platform for test and measurement </a></li>
+                                            <li><a href="mokulab2.html">17025 Calibration <br>Consistently precise, accurate, and repeatable results </a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li>
+                                        <a href="#" class="sf-with-ul">Software</a>
+                                        <ul>
+                                            <li><a href="ipad.html">iPad App <br>Offering test & measurement's most intutie user interface</a></li>
+                                            <li><a href="labview.html">LabVIEW<br>Control, build and incorporate with out LabVIEW integration</a></li>
+                                            <li><a href="python.html">Python (pymoku)<br>Use Python to take control of your Moku:Lab</a></li>
+                                            <li><a href="matlab.html">MATLAB<br>Harness the computational power of MATLAB</a></li>
+                                            <li><a href="windows.html">widows App (beta)<br>Expand your Moku:Lab experience with the windows App</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li>
+                                        <a href="#" class="sf-with-ul">Company</a>
+                                        <ul>
+                                            <li><a href="about.html">About Liquid Instruments<br>Learn about our company and meet our dedicated team</a></li>
+                                            <li><a href="contact.html">Contact<br>Have feedback or questions? <br> We'd love to hear from you </a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li>
+                                        <a href="resource.html" class="sf-with-ul">Resources</a>
+                                        <ul>
+                                            <li><a href="resource.html">News<br>See some of the latest company news and updates</a></li>
+                                            <li><a href="resource.html">Application Notes<br>Read case-based instrunctions and recommendations for our products</a></li>
+                                            <li><a href="resource.html">Publications<br>Browse a collection of papers which feature our products</a></li>
+                                            <li><a href="resource.html">Webinars<br>Check out our latest webinar here to catch up on any you've missed</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="sf-with-ul">Support</a>
+                                        <ul>
+                                            <li><a href="support.html">Moku:Lab & Instruments<br>Help for Moku: Lab, and its suit of instruments</a></li>
+                                            <li><a href="support.html">Software<br>Help for Moku:Lab's integration and utilities</a></li>
+                                            <li><a href="support.html">Contact Support<br>Need some assistance? <br> We're here for you </a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </nav>
+                        
                             <button class="mobile-menu-toggler" type="button">
                                 <i class="icon-menu"></i>
                             </button>
 
-                            <a href="index.html" class="logo">
-                                <img src="assets/images/logo.png" alt="Porto Logo">
-                            </a>
-                        </div>
-
-                        <div class="col-lg-8 header-center"> 
-                            <nav class="main-nav">
-                                <ul class="menu">
-                                   
-                                    
-                                    <li>
-                                        <a href="instruments.html">Instruments</a>
-                                        <div class="megamenu">
-                                            <div class="row row-sm">
-                                                <div class="col-lg-4">
-                                                   <ul class="submenu">
-                                                        <li><a href="lock-in amplifier.html">Lock-in Amplifier</a></li>
-                                                        <li><a href="arbitary waveform generator.html">Arbitary waveform-generator</a></li>
-                                                        <li><a href="pid controller.html">PID Controller</a></li>
-                                                        <li><a href="frequency response analyzer.html">Frequency Response Analyzer</a></li>
-                                                        <li><a href="laser lock box.html">Laser Lock Box</a></li>
-                                                        <li><a href="phasemeter.html">Phasemeter</a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="col-lg-4">
-                                                    <ul class="submenu">
-                                                        <li><a href="oscilloscope.html">Oscilloscope</a></li>
-                                                        <li><a href="spectrum-analyzer.html">Spectrum analyzer</a></li>
-                                                        <li><a href="digital-filter-box.html">Digitital filter Box</a></li>
-                                                        <li><a href="waveform-generator.html">waveform Generator</a></li>
-                                                        <li><a href="data-logger.html">Data Logger</a></li>
-                                                        <li><a href="fir-filter-builder.html">FIR Filter Builder</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-
-                                    <li>
-                                        <a href="">Hardware</a>
-                                        <div class="megamenu">
-                                            <div class="row row-sm">
-                                                <div class="col-lg-4">
-                                                    <ul class="submenu">
-                                                        <li><a href="mokulab.html">Moku:Lab <br>A software-configurable hardware platform for test and measurement </a></li>
-                                                        <li><a href="mokulab2.html">17025 Calibration <br>Consistently precise, accurate, and repeatable results </a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-
-                                    <li>
-                                        <a href="">Software</a>
-                                        <div class="megamenu">
-                                            <div class="row row-sm">
-                                                <div class="col-lg-4">
-                                                    <ul class="submenu">
-                                                        <li><a href="ipad.html">iPad App <br>Offering test & measurement's most intutie user interface</a></li>
-                                                        <li><a href="labview.html">LabVIEW<br>Control, build and incorporate with out LabVIEW integration</a></li>
-                                                        <li><a href="python.html">Python (pymoku)<br>Use Python to take control of your Moku:Lab</a></li>
-                                                        <li><a href="matlab.html">MATLAB<br>Harness the computational power of MATLAB</a></li>
-                                                        <li><a href="windows.html">widows App (beta)<br>Expand your Moku:Lab experience with the windows App</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-
-                                    <li>
-                                        <a href="">Company</a>
-                                        <div class="megamenu">
-                                            <div class="row row-sm">
-                                                <div class="col-lg-4">
-                                                    <ul class="submenu">
-                                                        <li><a href="about.html">About Liquid Instruments<br>Learn about our company and meet our dedicated team</a></li>
-                                                        <li><a href="contact.html">Contact<br>Have feedback or questions? <br> We'd love to hear from you </a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-
-                                    <li >
-                                        <a href="">Resources</a>
-                                        <div class="megamenu">
-                                            <div class="row row-sm">
-                                                <div class="col-lg-4">
-                                                    <ul class="submenu">
-                                                        <li><a href="resource.html">News<br>See some of the latest company news and updates</a></li>
-                                                        <li><a href="resource.html">Application Notes<br>Read case-based instrunctions and recommendations for our products</a></li>
-                                                        <li><a href="resource.html">Publications<br>Browse a collection of papers which feature our products</a></li>
-                                                        <li><a href="resource.html">Webinars<br>Check out our latest webinar here to catch up on any you've missed</a></li>
-                                                       
-                                                    </ul>
-                                                </div><!-- End .col-lg-4 -->
-                                            </div><!-- End .row -->
-                                        </div><!-- End .megamenu -->
-                                    </li>
-                                   
-                                    <li>
-                                        <a href="support.html">Support</a>
-                                        <div class="megamenu">
-                                            <div class="row row-sm">
-                                                <div class="col-lg-4">
-                                                    <ul class="submenu">
-                                                        <li><a href="support.html">Moku:Lab & Instruments<br>Help for Moku: Lab, and its suit of instruments</a></li>
-                                                        <li><a href="support.html">Software<br>Help for Moku:Lab's integration and utilities</a></li>
-                                                        <li><a href="support.html">Contact Support<br>Need some assistance? <br> We're here for you </a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>
-
-                        <div class="col-lg-2 header-right">
-                            <a href="login.html">
-                                <div class="header-user">
-                                    <i class="icon-user-2"></i>
-                                </div>
-                            </a>
-
-                           
-
-                            <div class="dropdown cart-dropdown">
-                                <a href="#" class="dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-display="static">
-                                    <i class="minicart-icon"></i>
-                                    <span class="cart-count">2</span>
-                                </a>
-                            </div><!-- End .dropdown -->
+                            <!-- <button class="btn-store">Store</button> -->
                         </div>
                     </div>
-                </div><!-- End .header-bottom -->
-            </div><!-- End .header-bottom -->
-        </header><!-- End .header -->
+                </div>
+            </div>
+        </header>
 
         <main class="main">
            
@@ -206,103 +169,132 @@
                             <h2>Freedom to move. Freedom to measure.</h2>
                             <p>Moku:Lab’s hardware and iPad app connect to each other using WiFi, 
                                 allowing you to record measurements and control your experiment from anywhere in the lab. An iPad will be included with each purchase of Moku:Lab.</p>
-                        </div><!-- End .product-desc -->
-
+                        
+                                <article class="entry single">
+                                    <div class="entry-media">
+                                        <div class="entry-slider owl-carousel owl-theme">
+                                            <img src="assets/images/products/single/extended/bg-02.jpg" alt="Post">
+                                        </div><!-- End .entry-slider -->
+                                    </div><!-- End .entry-media -->
+                                </article><!-- End .entry -->
+                        
+                            </div><!-- End .product-desc -->
                     </div><!-- End .product-single-details -->
+
+
+
+                    <article class="entry single">
+                        <div class="entry-media">
+                            <div class="entry-slider owl-carousel owl-theme">
+                                <img src="/assets/images/Products/single/ipad/img1.jpg" alt="Post">
+                            </div><!-- End .entry-slider -->
+                        </div><!-- End .entry-media -->
+
+                        <div class="entry-body">
+                            <h2 class="entry-title">
+                                Intuitive user interfaces
+                            </h2>
+
+                            <div class="entry-content">
+                                <p>Designed specifically for each instrument, Moku:Lab’s iPad App elevates user experience in test and measurement. Enjoy a streamlined workflow to maximize productivity. All twelve instruments share common elements and integrations that translate into a more familiar, 
+                                    intuitive and consistent experience in the lab no matter which instrument you need to use.</p> 
+                            </div><!-- End .entry-content -->
+                        </div><!-- End .entry-body -->
+                    </article><!-- End .entry -->
+
+
+                    <article class="entry single">
+                        <div class="entry-media" style="background-color: transparent;">
+                            <video width="auto" height="300px"  controls>
+                                <source src="/assets/images/Products/single/ipad/vid-1.mp4" type="video/mp4">
+                               
+                              Your browser does not support the video tag.
+                              </video>
+                        </div><!-- End .entry-media -->
+
+                        <div class="entry-body">
+                            <h2 class="entry-title">
+                                Spend more time measuring and less time fiddling
+                            </h2>
+
+                            <div class="entry-content">
+                                <p>Quickly configure your instrument and get measuring sooner using the 
+                                    iPad’s multi-touch gesture capabilities. Adjust important parameters using 
+                                    intuitive gestures you’re already familiar with on a smart phone.</p> 
+                            </div><!-- End .entry-content -->
+                        </div><!-- End .entry-body -->
+                    </article><!-- End .entry -->
+
+                    <article class="entry single">
+                        <div class="entry-media" style="background-color: transparent;">
+                            <video width="auto" height="300px"  controls>
+                                <source src="/assets/images/Products/single/ipad/vid-2.mp4" type="video/mp4">
+                               
+                              Your browser does not support the video tag.
+                              </video>
+                        </div><!-- End .entry-media -->
+
+                        <div class="entry-body">
+                            <h2 class="entry-title">
+                                ILights on. Lights off.
+                            </h2>
+
+                            <div class="entry-content">
+                                <p>Work in a light sensitive environment? Simply switch to dark mode.</p> 
+                            </div><!-- End .entry-content -->
+                        </div><!-- End .entry-body -->
+                    </article><!-- End .entry -->
+
+                    <article class="entry single">
+                        <div class="entry-media">
+                            <div class="entry-slider owl-carousel owl-theme">
+                                <img src="/assets/images/Products/single/ipad/img2.jpg" alt="Post">
+                            </div><!-- End .entry-slider -->
+                        </div><!-- End .entry-media -->
+
+                        <div class="entry-body">
+                            <h2 class="entry-title">
+                                Exporting data has never been easier
+                            </h2>
+
+                            <div class="entry-content">
+                                <p>Integration with Dropbox, iCloud and MyFiles makes sharing your data easier than ever before. And if the cloud’s not your thing,
+                                     you can also export your data to SD Card or share it via E-mail.</p> 
+                            </div><!-- End .entry-content -->
+                        </div><!-- End .entry-body -->
+                    </article><!-- End .entry -->
+
+                    <article class="entry single">
+                        <div class="entry-media">
+                            <div class="entry-slider owl-carousel owl-theme">
+                                <img src="/assets/images/Products/single/ipad/img3.jpg" alt="Post">
+                            </div><!-- End .entry-slider -->
+                        </div><!-- End .entry-media -->
+
+                        <div class="entry-body">
+                            <h2 class="entry-title">
+                                Moku:Lab gets better over time
+                            </h2>
+
+                            <div class="entry-content">
+                                <p>Moku:Lab receives free over-the-air software updates, bringing new features to existing instruments, and giving you access to entirely new instruments. When you buy a Moku:Lab, it’s just the beginning. To update your Moku:Lab hardware, simply update the iPad app whenever a new release becomes available. If you have purchased Moku:Lab’s Full-suite Bundle, you will automatically gain access to each new instrument as it is released through software updates. Otherwise, 
+                                    you can individually purchase new instruments by selecting “Upgrade your Moku:Lab” in the store.</p> 
+                            </div><!-- End .entry-content -->
+                        </div><!-- End .entry-body -->
+                    </article><!-- End .entry -->
+
+
+
+                   
+
                 </div><!-- End .container -->
             </div><!-- End .product-single-container -->
 
-            <div class="product-single-row">
-                <div class="single-row-entire" style="background-image: url('assets/images/products/single/extended/bg-02.jpg');"></div>
+        
+
+
             
-            </div><!-- End .product-single-row -->
 
-            <div class="product-single-row" >
-                <div class="single-row-bg" style="background-image: url('assets/images/products/single/ipad/img1.jpg');"></div><!-- End .single-row-bg -->
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6 col-xl-5">
-                            <h2>Intuitive user interfaces</h2>
-                            <p>Designed specifically for each instrument, Moku:Lab’s iPad App elevates user 
-                                experience in test and measurement. Enjoy a streamlined workflow to maximize 
-                                productivity. All twelve instruments share common elements and integrations
-                                 that translate into a more familiar, intuitive and 
-                                consistent experience in the lab no matter which instrument you need to use.</p>
-                        </div><!-- End .col-xl-5 -->
-                    </div><!-- End .row -->
-                </div><!-- End .container -->
-            </div><!-- End .product-single-row -->
-
-            <div class="product-single-row single-row-reverse" >
-                <div class="single-row-bg" style="background-color: transparent;" >
-                    <video height="50%" width="auto" controls style="margin: 20% 5% 0 10% ;">
-                        <source src="assets/images/Products/single/ipad/vid-1.mp4" type="video/mp4">
-                      Your browser does not support the video tag.
-                      </video>
-                </div><!-- End .single-row-bg -->
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6 offset-md-6 col-xl-5 offset-xl-7">
-                            <h2>Spend more time measuring and less time fiddling</h2>
-                            
-                            <p>Quickly configure your instrument and get measuring sooner using the iPad’s multi-touch gesture capabilities. Adjust important parameters 
-                                using intuitive gestures you’re already familiar with on a smart phone</p>
-                        </div><!-- End .col-xl-5 -->
-                    </div><!-- End .row -->
-                </div><!-- End .container -->
-            </div><!-- End .product-single-row -->
-
-            <div class="product-single-row" >
-                <div class="single-row-bg" style="background-color: transparent;" >
-                    <video height="50%" width="auto" controls style="margin: 20% 15% 0 5% ;">
-                        <source src="assets/images/Products/single/ipad/vid-2.mp4" type="video/mp4">
-                      Your browser does not support the video tag.
-                      </video>
-                </div><!-- End .single-row-bg -->
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6 col-xl-5">
-                            <h2>Lights on. Lights off.</h2>
-                            <p>Work in a light sensitive environment? Simply switch to dark mode.</p>
-                        </div><!-- End .col-xl-5 -->
-                    </div><!-- End .row -->
-                </div><!-- End .container -->
-            </div><!-- End .product-single-row -->
-
-            <div class="product-single-row single-row-reverse" >
-                <div class="single-row-bg" style="background-image: url('assets/images/products/single/ipad/img2.jpg');"></div><!-- End .single-row-bg -->
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6 offset-md-6 col-xl-5 offset-xl-7">
-                            <h2>Exporting data has never been easier</h2>
-                            
-                            <p>Integration with Dropbox, iCloud and MyFiles makes sharing your 
-                                data easier than ever before. And if the cloud’s not your thing,
-                                 you can also export your data to SD Card or share it via E-mail.</p>
-                        </div><!-- End .col-xl-5 -->
-                    </div><!-- End .row -->
-                </div><!-- End .container -->
-            </div><!-- End .product-single-row -->
-
-            <div class="product-single-row" >
-                <div class="single-row-bg" style="background-image: url('assets/images/products/single/ipad/img3.jpg');"></div><!-- End .single-row-bg -->
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6 col-xl-5">
-                            
-                            <h2>Moku:Lab gets better over time</h2>
-                            <p>Moku:Lab receives free over-the-air software updates, bringing new features to existing instruments, 
-                                and giving you access to entirely new instruments. When you buy a Moku:Lab, it’s just the beginning.
-                                 To update your Moku:Lab hardware, simply update the iPad app whenever a new release becomes available. 
-                                 If you have purchased Moku:Lab’s Full-suite Bundle, you will automatically gain access to each new 
-                                 instrument as it is released through software updates. Otherwise, 
-                                you can individually purchase new instruments by selecting “Upgrade your Moku:Lab” in the store.</p>
-                        </div><!-- End .col-xl-5 -->
-                    </div><!-- End .row -->
-                </div><!-- End .container -->
-            </div><!-- End .product-single-row -->
-
-            <div class="mb-5 mb-lg-6 mb-xl-7"></div><!-- margin -->
 
             
 

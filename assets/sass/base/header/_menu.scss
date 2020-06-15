@@ -1,4 +1,9 @@
 // Menu
+.main-nav {
+  display: none;
+  margin: 0 auto;
+}
+
 .menu,
 .menu * {
   margin: 0;
@@ -6,65 +11,201 @@
   list-style: none;
 }
 
+// Menu Skin
 .menu {
   @include clearfix;
 
-  margin-right: 15px;
-
   li {
-    a {
-      display: block;
-      padding: .8rem 1.8rem;
-      transition: all .2s ease-out;
-      text-transform: uppercase;
-      white-space: nowrap;
-      font: 600 12px $font-family;
-      letter-spacing: 0;
-      color: #696969;
+    position: relative;
+    padding-right: 1rem;
+    padding-left: 1rem;
+
+    &.megamenu-container {
+      position: static;
     }
 
-    &:hover,
-    &.show,
-    &.active {
-      > a {
-        background-color: #f4f4f4;
-        color: #ea6253;
-      }
+    a {
+      display: block;
+      padding: .7rem 1rem;
+      transition: background .25s;
+      color: #696969;
+      font-size: 1.3rem;
+      font-weight: 600;
+      white-space: nowrap;
+    }
 
-      > ul,
-      > .megamenu {
-        display: block;
+    .menu-title {
+      margin-top: 1.25rem;
+      margin-bottom: 0;
+      color: #434d53;
+      letter-spacing: -.01rem;
+      text-transform: uppercase;
+
+      a {
+        padding: .7rem 2rem;
+        color: #434d53;
+        font-size: 1.3rem;
+        font-weight: 700;
+
+        &:hover,
+        &:focus {
+          text-decoration: underline;
+        }
       }
     }
   }
 
   > li {
-    float: left;
-
     padding-right: 0;
     padding-left: 0;
+    float: left;
 
-    &:last-of-type {
-      margin-right: 0;
+    & + li {
+      margin-left: 2rem;
     }
 
     > a {
-      font: 400 13px $second-font-family;
-      letter-spacing: 0;
-      color: black;
-      padding: 10px 14px;
+      margin-bottom: -1px;
+      padding: 1.4rem 0;
+      background-color: transparent;
+      color: rgb(102, 102, 102);
+      font-size: 1.4rem;
+      font-weight: 400;
+      letter-spacing: .075rem;
       text-transform: uppercase;
 
-      &.sf-with-ul {
-        padding-right: 28px;
+      .tip {
+        position: absolute;
+        top: -4px;
+        right: 22px;
+        margin: 0;
+
+        &::before {
+          position: absolute;
+          top: 100%;
+          left: 3px;
+          width: 3px;
+          height: 3px;
+          margin: 0;
+          border-color: transparent;
+        }
+
+        &.tip-new::before {border-top-color: #0cc485;}
+    
+        &.tip-hot::before {border-top-color: #eb2771;}
+      }
+    }
+  }
+
+  
+
+  ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 240px;
+    margin-top: 1px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    z-index: 99;
+
+    ul {
+      top: -1rem;
+      left: 100%;
+      margin-top: 0;
+    }
+  }
+
+  .megamenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 1.5rem;
+    left: 1.5rem;
+    padding: 1rem;
+    z-index: 999;
+
+    &.megamenu-fixed-width {
+      right: auto;
+      left: 0;
+      width: 640px;
+    }
+
+    ul {
+      display: block;
+      position: static;
+      top: auto;
+      right: auto;
+      bottom: auto;
+      left: auto;
+      min-width: 0;
+      margin: 0 0 1.25rem;
+      padding: 0;
+      box-shadow: none;
+    }
+
+    .banner {
+      width: 100%;
+      height: 100%;
+      margin-bottom: 0;
+      background-color: transparent;
+
+      a {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
       }
 
-      &.sf-with-ul::after {
+      img {
+        position: absolute;
+        height: 100%;
+      }
+
+      img.product-promo {
+        padding: 1rem;
+      }
+    }
+  }
+
+  a {
+    display: block;
+    position: relative;
+    text-decoration: none;
+  }
+
+  &.sf-arrows {
+    > li {
+      > a.sf-with-ul {
+        padding-right: 1.4rem;
+
+        &::before {
+          display: block;
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          width: 0;
+          height: 0;
+          margin-left: -9px;
+          border-width: 0 9px 10px;
+          border-style: solid;
+          border-color: transparent transparent #fff;
+          content: '';
+          opacity: 0;
+          visibility: hidden;
+        }
+      }
+    }
+
+    .sf-with-ul {
+      position: relative;
+
+      &::after {
         display: inline-block;
         position: absolute;
         top: 50%;
-        right: 14px;
-        margin-top: -1px;
+        right: 0;
         transform: translateY(-50%);
         font-family: 'porto';
         font-size: 1.3rem;
@@ -73,127 +214,42 @@
       }
     }
 
-    &:hover,
-    &.show,
-    &.active {
-      > a {
-        color: black;
-        background-color: $primary-color;
+    ul {
+      .sf-with-ul {
+        &::after {
+          right: 1rem;
+          content: '\e81a';
+        }
       }
     }
   }
 
-  .megamenu {
-    display: none;
-    position: absolute;
-    z-index: 999;
+  .megamenu,
+  ul {
     background-color: #fff;
+    font-family: $font-family;
     box-shadow: 0 29px 29px rgba(0, 0, 0, .1);
-    border: 1px solid #eee;
-    left: 15px;
-    padding: 1rem;
-    width: max-content;
+  }
 
-    >.row.row-sm {
-      margin: 0;
-
-      >[class*='col-'] {
-        padding: 1rem;
-
-        &.image-container {
-          display: flex;
-          justify-content: flex-end;
-          padding: 0;
-        }
-      }
-
-      .row.row-sm {
-        margin: 0;
-        padding: 0;
-
-        >[class*='col-'] {
-          padding-left: 0;
-          padding-right: 1rem;
-        }
-      }
+  li:hover,
+  li.show,
+  li.active {
+    > a {
+      background-color: $primary-color;
+      color: #ffffff;
     }
+  }
 
-    .nolink {
-      color: #141a1f;
-      font: 700 13px $font-family;
-      letter-spacing: -0.01em;
-      padding: 0 0 5px;
-      margin-bottom: 5px;
-      margin-top: 5px;
-    }
-
-    img {
-      width: 300px;
-      object-fit: cover;
-    }
-
-    .submenu {
-      margin: 0;
-      padding-bottom: 5px;
-      border-top: none;
-      display: block;
-      position: static;
-      padding: 0;
-      box-shadow: none;
-      min-width: 0;
-
-      li {
-        padding: 0;
-        margin-bottom: 5px;
-
-        a {
-          margin-left: -8px;
-          padding: 7px 8px;
-        }
-
-        a:hover {
-          background-color: #f4f4f4;
-        }
-
-        &:last-child {
-          margin-bottom: 0;
-        }
-      }
+  > li:hover,
+  > li.show,
+  > li.active {
+    > a {
+      background-color: transparent;
+      color: #ea6253;
     }
   }
 
   &.sf-arrows {
-    .sf-with-ul,
-    .sf-with-ul li {
-      position: relative;
-    }
-
-    ul {
-      display: none;
-      position: absolute;
-      min-width: 200px;
-      padding: 5px 0;
-      top: 100%;
-      left: 0;
-      z-index: 99;
-      background-color: #fff;
-      box-shadow: 0 29px 29px rgba(0, 0, 0, .1);
-
-      ul {
-        top: -8px;
-        left: 100%;
-      }
-
-      .sf-with-ul {
-        &::after {
-          position: absolute;
-          right: 1rem;
-          content: '\e81a';
-          font-family: 'Porto';
-        }
-      }
-    }
-
     > li.show {
       > a.sf-with-ul::before {
         opacity: 1;
@@ -205,5 +261,82 @@
   .show > ul,
   .show > .megamenu {
     opacity: 1 !important;
+  }
+}
+
+.menu li:hover > ul,
+.menu li.show > ul,
+.menu li:hover > .megamenu,
+.menu li.show > .megamenu {
+  display: block;
+}
+
+.tip {
+  display: inline-block;
+  position: relative;
+  margin: -2px 0 0 1rem;
+  padding: .3rem .4rem;
+  border-radius: .2rem;
+  color: #fff;
+  font-family: $font-family;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  text-transform: uppercase;
+  vertical-align: middle;
+  z-index: 1;
+
+  &::before {
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    left: auto;
+    margin-top: -3px;
+    border: 3px solid transparent;
+    content: '';
+  }
+
+  &.tip-new {background-color: #0fc567;}
+
+  &.tip-new::before {border-right-color: #0fc567;}
+
+  &.tip-hot {background-color: #eb2771;}
+
+  &.tip-hot::before {border-right-color: #eb2771;}
+}
+
+@include mq('lg') {
+  .main-nav {
+    display: block;
+  }
+}
+
+@include mq('xl') {
+  .menu {
+    > li + li {
+      margin-left: 4rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1279px) and (min-width: 992px) {
+  .header-dropdown > a {
+    min-width: 32px;
+    padding-right: 1.5rem;
+  }
+
+  .cart-dropdown {
+    .dropdown-toggle {
+      padding-right: 1.6rem;
+      padding-left: 1.2rem;
+    }
+
+    .dropdownmenu-wrapper::after {
+      right: 1.7rem;
+    }
+
+    .dropdown-menu {
+      width: 300px;
+    }
   }
 }
