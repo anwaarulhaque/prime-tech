@@ -28,29 +28,40 @@
       display: block;
       padding: .7rem 1rem;
       transition: background .25s;
-      color: #696969;
-      font-size: 1.3rem;
+      color: #696969 ;
+      font-size: 15px;
       font-weight: 600;
       white-space: nowrap;
+
+      span{
+        font-size: 15px;
+        font-weight: normal;
+      }
+           
     }
 
     .menu-title {
       margin-top: 1.25rem;
-      margin-bottom: 0;
+      margin-bottom: 5px;
       color: #b3b3b3;
       letter-spacing: -.01rem;
       font-size: 18px !important;
+      padding-bottom: 5px;
+      border-bottom: 1px solid #b3b3b3;
      
 
       a {
         padding: .7rem 2rem;
         color: #707070;
-        font-size: 1.5rem;
+        font-size: 15px;
+
+        
        
 
         &:hover,
         &:focus {
-          text-decoration: underline;
+          // text-decoration: underline;
+          color: #000;
           
         }
       }
@@ -75,6 +86,8 @@
       font-weight: 400;
       letter-spacing: .075rem;
       text-transform: uppercase;
+
+      
 
       .tip {
         position: absolute;
@@ -221,6 +234,8 @@
           right: 1rem;
           content: '\e81a';
         }
+
+        
       }
     }
   }
@@ -232,13 +247,17 @@
     box-shadow: 0 29px 29px rgba(0, 0, 0, .1);
   }
 
+
+
   li:hover,
   li.show,
   li.active {
     > a {
       background-color: transparent;
-      color: #ea6253;
+      color: #ea6253; // hover line
       cursor: pointer;
+      
+        
     }
   }
 
@@ -247,8 +266,13 @@
   > li.active {
     > a {
       background-color: transparent;
-      color: #ea6253;
+      color: #ea6253; //nav menu hover
     }
+  }
+
+
+  li:hover{
+    color: #ea6253; //nav menu hover
   }
 
   &.sf-arrows {
