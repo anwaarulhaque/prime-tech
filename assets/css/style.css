@@ -895,7 +895,7 @@ a:focus {
     font-weight: 600;
     white-space: nowrap; }
     .menu li a span {
-      font-size: 15px;
+      font-size: 1.3rem;
       font-weight: normal; }
   .menu li .menu-title {
     margin-top: 1.25rem;
@@ -910,7 +910,7 @@ a:focus {
       color: #707070;
       font-size: 15px; }
       .menu li .menu-title a:hover, .menu li .menu-title a:focus {
-        color: #000; }
+        color: #ea6253; }
 
 .menu > li {
   padding-right: 0;
@@ -1114,6 +1114,11 @@ a:focus {
   .menu > li + li {
     margin-left: 4rem; } }
 
+.inner-menu .menu-title a {
+  font-weight: normal; }
+  .inner-menu .menu-title a::first-line {
+    font-weight: 700; }
+
 .inner-menu .cards {
   display: flex;
   width: 100%; }
@@ -1261,7 +1266,10 @@ a:focus {
       position: relative;
       margin-right: 4.5rem;
       padding: 1.1rem 0 1.1rem 1.5rem;
-      color: #fff; }
+      color: #fff;
+      font-size: 1.3rem; }
+      .mobile-menu li a::first-line {
+        font-size: 13px; }
       .mobile-menu li a:hover, .mobile-menu li a:focus {
         color: #ea6253;
         text-decoration: none; }
@@ -1292,7 +1300,7 @@ a:focus {
   border-radius: 0;
   outline: none;
   background-color: transparent;
-  color: black;
+  color: white;
   font-size: 1.5rem;
   cursor: pointer; }
   .mmenu-btn::after {
@@ -2472,6 +2480,16 @@ label {
   border-radius: 0;
   min-width: 124px;
   transition: all .3s; }
+
+.btn-view-product {
+  font-size: 1.3rem;
+  padding: 1rem 1.5rem;
+  background-color: #ea6253;
+  color: #fff;
+  border: none; }
+  .btn-view-product a {
+    color: #fff !important;
+    text-transform: uppercase; }
 
 .btn-sm {
   font-size: 1.3rem;
@@ -7137,6 +7155,8 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 .product-single-details {
   margin-top: -.6rem;
   font-family: "Open Sans", sans-serif; }
+  .product-single-details .product-single-header .row .col-xl-6 p {
+    font-size: 15px; }
   .product-single-details .product-title {
     margin-bottom: 1.1rem;
     font: 700 2.6rem "Poppins", "Open Sans", sans-serif;
@@ -8953,7 +8973,8 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 
 .entry-content p {
   font-size: 1.5rem;
-  text-align: justify; }
+  text-align: justify;
+  line-height: 1.7em; }
 
 .read-more {
   float: right; }

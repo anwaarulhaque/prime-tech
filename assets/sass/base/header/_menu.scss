@@ -34,7 +34,7 @@
       white-space: nowrap;
 
       span{
-        font-size: 15px;
+        font-size: 1.3rem;
         font-weight: normal;
       }
            
@@ -61,7 +61,7 @@
         &:hover,
         &:focus {
           // text-decoration: underline;
-          color: #000;
+          color: $primary-color;
           
         }
       }
@@ -349,6 +349,14 @@
 
 
 .inner-menu{
+
+  .menu-title{
+    a{font-weight: normal;
+      &::first-line{
+        font-weight: 700;
+      }
+    }
+  }
   .cards{
     display: flex;
     width: 100%;

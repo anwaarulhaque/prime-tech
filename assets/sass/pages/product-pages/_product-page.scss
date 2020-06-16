@@ -90,6 +90,16 @@
   margin-top: -.6rem;
   font-family: $second-font-family;
 
+  .product-single-header{
+    .row{
+      .col-xl-6{
+        p{
+          font-size: 15px;
+        }
+      }
+    }
+  }
+
   .product-title {
     margin-bottom: 1.1rem;
     font: 700 2.6rem $font-family;

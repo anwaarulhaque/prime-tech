@@ -11,6 +11,19 @@
   transition: all .3s;
 }
 
+.btn-view-product{
+  font-size: 1.3rem;
+  padding: 1rem 1.5rem;
+  background-color: $primary-color;
+  color: #fff;
+  border: none;
+
+  a{
+    color:#fff !important;
+    text-transform: uppercase;
+  }
+}
+
 .btn-sm {
   font-size: 1.3rem;
   padding: 1rem 1.5rem;
