@@ -9326,7 +9326,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
     .nav.nav-tabs .nav-item .nav-link {
       padding: 1rem 2rem;
       border: 0;
-      border-left: 3px solid transparent;
+      border-bottom: 3px solid transparent;
       color: #141a1f;
       font: 600 1.6rem/1 "Poppins", "Open Sans", sans-serif;
       letter-spacing: -.01rem; }
@@ -9335,7 +9335,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
         text-decoration: none; }
     .nav.nav-tabs .nav-item.show .nav-link,
     .nav.nav-tabs .nav-item .nav-link.active {
-      border-left-color: #ea6253 !important;
+      border-bottom-color: #ea6253;
       color: #ea6253;
       background-color: transparent;
       text-decoration: none; }
