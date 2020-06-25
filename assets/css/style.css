@@ -375,11 +375,13 @@ a:focus {
   display: none; }
 
 .logo {
-  display: none; }
+  display: block;
+  margin-right: 6rem; }
   .logo img {
-    display: none;
-    max-width: 100%;
-    height: auto; }
+    display: block;
+    max-width: none;
+    height: 50px;
+    width: auto; }
 
 .header-dropdown {
   position: relative;
