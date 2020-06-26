@@ -61,7 +61,7 @@
         &:hover,
         &:focus {
           // text-decoration: underline;
-          color: $primary-color;
+          color: #008654;
           
         }
       }
@@ -254,7 +254,7 @@
   li.active {
     > a {
       background-color: transparent;
-      color: #ea6253; // hover line
+      color: #008654; // hover line
       cursor: pointer;
       
         
@@ -266,13 +266,13 @@
   > li.active {
     > a {
       background-color: transparent;
-      color: #ea6253; //nav menu hover
+      color: #008654; //nav menu hover
     }
   }
 
 
   li:hover{
-    color: #ea6253; //nav menu hover
+    color: #008654; //nav menu hover
   }
 
   &.sf-arrows {
