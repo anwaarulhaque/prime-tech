@@ -380,7 +380,7 @@ a:focus {
   .logo img {
     display: block;
     max-width: none;
-    height: 50px;
+    height: 80px;
     width: auto; }
 
 .header-dropdown {
@@ -756,7 +756,7 @@ a:focus {
   border: 0;
   background: transparent;
   color: #1d1d1d;
-  font-size: 2.1rem;
+  font-size: 3.1rem;
   line-height: 1;
   cursor: pointer; }
   .mobile-menu-toggler:hover {
