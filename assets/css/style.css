@@ -760,7 +760,7 @@ a:focus {
   line-height: 1;
   cursor: pointer; }
   .mobile-menu-toggler:hover {
-    color: #ff4052; }
+    color: #008654; }
   .mobile-menu-toggler i::before {
     margin: 0; }
 
@@ -912,7 +912,7 @@ a:focus {
       color: #707070;
       font-size: 15px; }
       .menu li .menu-title a:hover, .menu li .menu-title a:focus {
-        color: #ea6253; }
+        color: #008654; }
 
 .menu > li {
   padding-right: 0;
@@ -1051,17 +1051,17 @@ a:focus {
 .menu li.show > a,
 .menu li.active > a {
   background-color: transparent;
-  color: #ea6253;
+  color: #008654;
   cursor: pointer; }
 
 .menu > li:hover > a,
 .menu > li.show > a,
 .menu > li.active > a {
   background-color: transparent;
-  color: #ea6253; }
+  color: #008654; }
 
 .menu li:hover {
-  color: #ea6253; }
+  color: #008654; }
 
 .menu.sf-arrows > li.show > a.sf-with-ul::before {
   opacity: 1;
